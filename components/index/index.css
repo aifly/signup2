@@ -1,0 +1,281 @@
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+
+.zmiti-play {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  right: .5rem;
+  top: .5rem;
+}
+
+.zmiti-play.rotate {
+  -webkit-animation: rotate 5s linear infinite;
+  animation: rotate 5s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.zmiti-index-main-ui {
+  overflow: hidden;
+  width: 10rem;
+  left: 50% !important;
+  margin-left: -375px;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  opacity: 0;
+  z-index: -1;
+}
+
+.zmiti-index-main-ui .zmiti-tips {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: horizontal;
+}
+
+.zmiti-index-main-ui .zmiti-tips > div:nth-of-type(1) {
+  color: #ee0000;
+}
+
+.zmiti-index-main-ui .zmiti-tips > div:nth-of-type(2) {
+  overflow: hidden;
+}
+
+.zmiti-index-main-ui .zmiti-tips > div:nth-of-type(2) div {
+  -webkit-animation: move linear 10s infinite;
+  animation: move linear 10s infinite;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(-100%, 0);
+  }
+}
+
+.zmiti-index-main-ui > div {
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 50%;
+}
+
+.zmiti-index-main-ui.show {
+  opacity: 1;
+  z-index: 500;
+}
+
+.zmiti-index-main-ui .zmiti-index-logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.zmiti-index-main-ui .zmiti-qd-mask {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+}
+
+.zmiti-index-main-ui .zmiti-qd-mask > div {
+  position: relative;
+  text-align: center;
+}
+
+.zmiti-index-main-ui .zmiti-qd-mask > div img {
+  width: 300px;
+  position: relative;
+  z-index: 10;
+}
+
+.zmiti-index-main-ui .zmiti-qd-mask > div .zmiti-btn {
+  position: absolute;
+}
+
+.zmiti-index-main-ui .zmiti-qd-mask .zmiti-qd-info {
+  width: 500px;
+  background: #fff;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: -100px;
+  border-radius: 20px;
+  padding-top: 100px;
+  color: #999999;
+  box-sizing: border-box;
+}
+
+.zmiti-index-main-ui .zmiti-num-mask {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  height: 100% !important;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: horizontal;
+}
+
+.zmiti-index-main-ui .zmiti-num-mask > div {
+  position: relative;
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 280px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.zmiti-index-main-ui .zmiti-num-mask > div div.zmiti-number {
+  margin: 22px;
+  color: #999;
+}
+
+.zmiti-index-main-ui .zmiti-num-mask > div div.zmiti-number:nth-of-type(2) {
+  font-size: 34px;
+  color: #f90;
+  font-weight: bold;
+}
+
+.zmiti-index-main-ui .zmiti-num-mask > div .zmiti-btn {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.zmiti-btn {
+  width: 110%;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  color: #fff;
+  background-image: -webkit-linear-gradient(left, #fe6500, #f00000);
+}
+
+.zmiti-btn.active {
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.zmiti-index-main-ui .zmiti-nav {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+}
+
+.zmiti-index-main-ui .zmiti-nav ul {
+  width: 85%;
+}
+
+.zmiti-index-main-ui .zmiti-nav li {
+  display: inline-block;
+  margin: 32px 50px;
+  min-width: 70px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.zmiti-index-main-ui .zmiti-nav li div {
+  color: #00496b;
+  margin: 2px auto;
+}
+
+.zmiti-index-main-ui .zmiti-nav li div:nth-of-type(2) {
+  height: 60px;
+  line-height: 60px;
+}
+
+.zmiti-index-main-ui .zmiti-nav li .grey {
+  color: #bbbbbb;
+}
+
+@-webkit-keyframes rotate1 {
+  to {
+    -webkit-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
+    opacity: 0;
+  }
+}
+
+.zmiti-loading {
+  z-index: 1000;
+}
+
+.zmiti-loading .zmiti-loading-ui {
+  width: 6rem;
+  left: 2rem;
+  position: absolute;
+  top: 6rem;
+}
+
+.zmiti-loading .zmiti-loading-ui .zmiti-loading-bar {
+  width: 2rem;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.zmiti-loading .zmiti-loading-ui .zmiti-loading-bar:before {
+  content: '';
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.zmiti-loading .zmiti-loading-ui .zmiti-loading-bar .zmiti-target {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #fff;
+  left: 50%;
+  top: .4rem;
+  position: absolute;
+  margin-left: -0.2rem;
+  -webkit-animation: scale linear 2s infinite alternate;
+  animation: scale linear 2s infinite alternate;
+}
+
+.zmiti-loading .zmiti-loading-ui .zmiti-progress {
+  margin-top: .5rem;
+  text-align: center;
+  color: #fff;
+  font-family: Georgia;
+  font-size: .7rem;
+}

@@ -1,0 +1,57 @@
+{
+    "getret":0,
+    "getmsg":"",
+    "list":[
+        {
+            "username": "张三",
+            "sex": 1,
+            "nation": "汉",
+            "job": "编辑",
+            "province": "北京",
+            "mobile": "15718879215",
+            "room": "624",
+            "status":1,
+            "seat": "6排12号张"
+        }, {
+            "username": "张三",
+            "sex": 1,
+            "nation": "汉",
+            "job": "编辑",
+            "province": "北京",
+            "mobile": "15718879215",
+            "room": "624",
+            "status": 1,
+            "seat": "6排12号"
+        }, {
+            "username": "张三",
+            "sex": 1,
+            "nation": "汉",
+            "job": "编辑",
+            "province": "北京",
+            "mobile": "15718879215",
+            "room": "624",
+            "status": 1,
+            "seat": "6排12号6排"
+        }, {
+            "username": "张三",
+            "sex": 1,
+            "nation": "汉",
+            "job": "编辑",
+            "province": "北京",
+            "mobile": "15718879215",
+            "room": "624",
+            "status": 1,
+            "seat": "6排12号"
+        }, {
+            "username": "张三",
+            "sex": 1,
+            "nation": "汉",
+            "job": "编辑",
+            "province": "北京",
+            "mobile": "15718879215",
+            "room": "624",
+            "status": 1,
+            "seat": "6排12号"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+﻿@import "../css/base.scss";
+
+$baseColor: #fcffb4;
+$viewW: 750px;
+$bgColor: #fcfff8;
+$color: #fffb88;
+
+.zmiti-signin-main-ui {
+    opacity: 0;
+    z-index: -1;
+    background: #fff;
+    &.show {
+        z-index: 1230;
+        opacity: 1;
+    }
+
+
+    .zmiti-qd-btn{
+        @include pos(a);
+        $size:240px;
+        width: $size;
+        height: $size;
+        @include br();
+        background-image:-webkit-linear-gradient(top, #ff7822, #f4110f);
+        text-align: center;
+        line-height: $size;
+        color:#fff;
+        font-size:34px;
+        left: 50%;
+        margin-left: -$size/2;
+        bottom: 200px;
+
+        &.active{
+            @include transform(scale(.95));
+            @include transition(.1s);
+        }
+
+        &:before,
+        &:after{
+            content:'';
+            @include pos(a);
+            width: 100%;
+            height: 100%;
+            @include br();
+            box-shadow: 0 0 50px rgba(254, 111, 32, .3);
+            background: rgba(254, 111, 32, .3);
+            left: 0;
+            top: 0;
+            z-index: -1;
+            @include animation(flash 2s linear infinite);
+        }
+         &:before{
+             @include animation(flash 2s 1s linear infinite);
+         }
+
+    }
+
+
+    .zmiti-signin-success{
+        z-index: 100;
+        background: #fff;
+        @include displayBox(vertical);
+        &>div{
+         @include pos(r);   
+         height: 65vh;
+         text-align: center;
+
+         .zmiti-btn{
+             @include br(10px);
+         }
+        }
+    }
+    
+}
+
+.zmiti-back{
+    width:100px;
+    height: 100px;
+    @include pos(f);
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+@-webkit-keyframes flash {
+    to {
+        @include transform(scale(1.8));
+        opacity: 0;
+    }
+}
